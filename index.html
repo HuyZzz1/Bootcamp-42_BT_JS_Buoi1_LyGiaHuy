@@ -1,12 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS</title>
+    <title>Bài tập JS</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: rgb(224, 222, 219);
+      }
+      .wrapper {
+        padding: 50px;
+      }
+      .card {
+        width: 700px;
+      }
+    </style>
   </head>
   <body>
-    <script src="./index.js"></script>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-6">
+          <div class="card m-auto shadow">
+            <h5 class="card-header">Bài tập 1: Tính tiền lương nhân viên</h5>
+            <div class="card-body">
+              <form>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="luong_1_ngay">Lương một ngày:</label>
+                    <input
+                      placeholder="Nhập lương một ngày"
+                      type="number"
+                      class="form-control"
+                      id="luong_1_ngay"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="so_ngay_lam">Số ngày làm việc:</label>
+                    <input
+                      placeholder="Nhập số ngày làm việc"
+                      type="number"
+                      class="form-control"
+                      id="so_ngay_lam"
+                    />
+                  </div>
+                </div>
+              </form>
+              <button type="submit" class="btn btn-primary mt-3" id="submit">
+                Tính lương
+              </button>
+            </div>
+            <div class="card-footer">
+              <h5>Kết quả: <span id="message"></span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card_wrapper">
+            <div class="card m-auto mt-5 shadow">
+              <h5 class="card-header">
+                Bài tập 2: Tính giá trị trung bình của 5 số thực
+              </h5>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <label for="number_1">Số thứ 1</label>
+                      <input
+                        placeholder="Nhập số "
+                        type="number"
+                        class="form-control"
+                        id="number_1"
+                      />
+                    </div>
+                    <div class="col">
+                      <label for="number_2">Số thứ 2</label>
+                      <input
+                        placeholder="Nhập số "
+                        type="number"
+                        class="form-control"
+                        id="number_2"
+                      />
+                    </div>
+                    <div class="col">
+                      <label for="number_3">Số thứ 3</label>
+                      <input
+                        placeholder="Nhập số "
+                        type="number"
+                        class="form-control"
+                        id="number_3"
+                      />
+                    </div>
+                    <div class="col">
+                      <label for="number_4">Số thứ 4</label>
+                      <input
+                        placeholder="Nhập số "
+                        type="number"
+                        class="form-control"
+                        id="number_4"
+                      />
+                    </div>
+                    <div class="col">
+                      <label for="number_5">Số thứ 5</label>
+                      <input
+                        placeholder="Nhập số "
+                        type="number"
+                        class="form-control"
+                        id="number_5"
+                      />
+                    </div>
+                  </div>
+                </form>
+                <button class="btn btn-primary mt-3" id="submit_2">
+                  Tính trung bình
+                </button>
+              </div>
+              <div class="card-footer">
+                <h5>Kết quả: <span id="message_2"></span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card_wrapper mt-5">
+            <div class="card m-auto mt-5 shadow">
+              <h5 class="card-header">Bài tập 3: Quy đổi tiền</h5>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <label for="money">Số tiền USD</label>
+                      <input
+                        placeholder="Nhập số tiền USD"
+                        type="number"
+                        class="form-control"
+                        id="money"
+                      />
+                    </div>
+                  </div>
+                </form>
+                <button class="btn btn-primary mt-3" id="submit_3">
+                  Quy đổi tiền
+                </button>
+              </div>
+              <div class="card-footer">
+                <h5>Kết quả: <span id="message_3"></span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card_wrapper mt-5">
+            <div class="card m-auto mt-5 shadow">
+              <h5 class="card-header">
+                Bài tập 4: Tính diện tích, chu vi hình chữ nhật
+              </h5>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <label for="chieu_dai">Chiều dài</label>
+                      <input
+                        placeholder="Nhập chiều dài"
+                        type="number"
+                        class="form-control"
+                        id="chieu_dai"
+                      />
+                    </div>
+                    <div class="col">
+                      <label for="chieu_rong">Chiều rộng</label>
+                      <input
+                        placeholder="Nhập chiều rộng"
+                        type="number"
+                        class="form-control"
+                        id="chieu_rong"
+                      />
+                    </div>
+                  </div>
+                </form>
+                <button class="btn btn-primary mt-3 px-4" id="submit_4">
+                  Tính
+                </button>
+              </div>
+              <div class="card-footer">
+                <h5>Kết quả: <span id="message_4"></span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card_wrapper mt-5">
+            <div class="card m-auto mt-5 shadow">
+              <h5 class="card-header">Bài tập 5: Tính tổng 2 ký số</h5>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <label for="number_6">Số có 2 chữ số</label>
+                      <input
+                        placeholder="Nhập số có 2 chữ số"
+                        type="number"
+                        class="form-control"
+                        id="number_6"
+                      />
+                    </div>
+                  </div>
+                </form>
+                <button class="btn btn-primary mt-3" id="submit_5">
+                  Tính tổng
+                </button>
+              </div>
+              <div class="card-footer">
+                <h5>Kết quả: <span id="message_5"></span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
   </body>
 </html>
